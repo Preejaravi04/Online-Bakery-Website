@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Menu</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color:beige;
+                color: #333;
+            }
+        
+            .menu-item {
+                padding: 10px;
+                background-color: grey;
+                border: 1px solid white;
+                margin-bottom: 5px;
+                cursor: pointer;
+                text-align: center;
+            }
+            .collapsible-content {
+                width:100%;
+                display: none;
+                padding:30px;
+                border-top: 1px solid #ccc;
+            }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-right: 20px; 
+        }
+
+        img {
+            display: block;
+            margin-bottom: 10px; 
+        }
+       
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">EXPLORE OUR PRODUCTS</h2>
+        <div class="menu-item" onclick="toggleCollapsible('item1')">PASTRIES</div>
+        <div id="item1" class="collapsible-content">
+            <p>Explore our delicious range of pastries, cakes, and breads made with the finest ingredients.</p>
+   
+            <ul>
+            
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Pictures\pastryy.jpg" alt="Fresh Cream Pineapple Pastry" title="Fresh Cream Pineapple Pastry"  height="200" width="250">
+                    <p>Fresh Cream Pineapple Pastry</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Fresh Cream Pineapple Pastry', 10.99)"> <button class="btn btn-primary btn-block">Add to Cart</button></a>
+                </li>
+            
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Pictures\pastry2.jpeg" alt="Devil Mousse Pastry" title="Devil Mousse Pastry" height="200" width="250">
+                    <p>Devil Mousse Pastry</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Devil Mousse Pastry', 8.90)"> <button class="btn btn-primary btn-block">Add to Cart</button></a>                 </li>
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\pastry3.jpeg" alt="Red Velvet Pastry" height="200" width="250">
+                    <p>Red Velvet Pastry</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Red Velvet Pastry', 12.99)"> <button class="btn btn-primary btn-block">Add to Cart</button></a>
+                </li>
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\pastry4.jpeg" alt="Fruit Pastry Tart" height="200" width="250">
+                    <p>Fruit Pastry Tart</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Fruit Pastry Tart', 15.99)"> <button class="btn btn-primary btn-block">Add to Cart</button></a>
+                </li>
+            
+            </ul>
+    
+    </div>
+      
+    
+        <div class="menu-item" onclick="toggleCollapsible('item2')">BEVERAGES</div>
+        <div id="item2" class="collapsible-content">
+            <p>Make your special occasions memorable with our custom-designed beverages tailored just for you.</p>
+           
+        <ul>
+            <li>
+                <img src="C:\Users\srija\OneDrive\Desktop\b1.jpeg" alt="HOT CHOCOLATE" title="HOT CHOCOLATE" height="200" width="250">
+                <p>Hot Chocolate </p>
+                <a href="javascript:void(0)" onclick="addToCart('Hot Chocolate',7.89)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+            </li>
+            <li>
+                <img src="C:\Users\srija\OneDrive\Desktop\b2.jpeg" alt="CAPPUCINO" title="CAPPUCINO" height="200" width="250">
+                <p>Cappucino</p>
+                <a href="javascript:void(0)" onclick="addToCart('Cappucino',9.00)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+            </li>
+            <li>
+                <img src="C:\Users\srija\OneDrive\Desktop\b3.jpeg" alt="LEMON MINT JUICE" height="200" width="250">
+                <p>Lemon Mint Juice</p>
+                <a href="javascript:void(0)" onclick="addToCart('Lemon Mint Juice',6.00)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+            </li>
+            <li>
+                <img src="C:\Users\srija\OneDrive\Desktop\b4.jpeg" alt="BLUEBERRY MOJITO" height="200" width="250">
+                <p>Blueberry Mojito </p>
+                <a href="javascript:void(0)" onclick="addToCart('Blueberry Mojito',8.00)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+            
+            </li>
+        </ul>
+        </div>
+    
+        <div class="menu-item" onclick="toggleCollapsible('item3')">SAVOURIES</div>
+        <div id="item3" class="collapsible-content">
+            <p>Indulge in our daily delights, from cookies and cupcakes to seasonal specialties.</p>
+            <ul>
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\s1.jpeg" alt="Cheese Boursin" title="Cheese Boursin" height="200" width="250">
+                    <p>Cheese Boursin</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Cheese Boursin',11.00)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\s2.jpg" alt="Cheddar Muffins" title="Cheddar Muffins" height="200" width="250">
+                    <p>Cheddar Muffins </p>
+                    <a href="javascript:void(0)" onclick="addToCart('Cheddar Muffins',11.50)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>  <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\s3.jpeg" alt="Parmesan French Toast " title="Parmesan French Toast " height="200" width="250">
+                    <p>Parmesan French Toast </p>
+                    <a href="javascript:void(0)" onclick="addToCart('Parmesan French Toast ',13.89)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>  <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\s4.jpeg" alt="Dutch Baby" title="Dutch Baby" height="200" width="250">
+                    <p>Dutch Baby </p>
+                    <a href="javascript:void(0)" onclick="addToCart('Dutch Baby',15.30)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>
+        </div>
+    
+        <div class="menu-item" onclick="toggleCollapsible('item4')">DESSERTS</div>
+        <div id="item4" class="collapsible-content">
+            <p>Experience the goodness of real ingredient desserts in our scratch-made products without artificial preservatives.</p>
+            <ul>
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\d1.jpeg" alt="Chocolate Pudding" title="Chocolate Pudding" height="200" width="250">
+                    <p>Chocolate Pudding</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Chocolate Pudding',9.99)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>
+                <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\d2.jpeg" alt="Mango Shots" title="Mango Shots" height="200" width="250">
+                    <p>Mango Shots</p>
+                    <a href="javascript:void(0)" onclick="addToCart('Mango Shots',7.50)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>  <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\d3.jpeg" alt="Lemon Pie Cups" title="Lemon Pie Cups" height="200" width="250">
+                    <p>Lemon Pie Cups </p>
+                    <a href="javascript:void(0)" onclick="addToCart('Lemon Pie Cups',10.89)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>  <li>
+                    <img src="C:\Users\srija\OneDrive\Desktop\d4.jpeg" alt="Macrons" title="Macrons" height="200" width="250">
+                    <p>Macrons </p>
+                    <a href="javascript:void(0)" onclick="addToCart('Macrons',6.00)"><button class="btn btn-block btn-block">Add to Cart</button></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="totalAmount">0.00</span></p>
+        </div>
+    
+        <script>
+            var cart = [];
+            var totalAmount = 0;
+    
+            function addToCart(productName, price) {
+                cart.push({ name: productName, price: price });
+                totalAmount += price;
+                updateCartDisplay();
+            }
+    
+            function removeItemFromCart(index) {
+                var removedItem = cart.splice(index, 1)[0];
+                totalAmount -= removedItem.price;
+                updateCartDisplay();
+            }
+    
+            function updateCartDisplay() {
+                var cartItemsElement = document.getElementById('cartItems');
+                var totalAmountElement = document.getElementById('totalAmount');
+    
+                cartItemsElement.innerHTML = '';
+    
+                cart.forEach((item, index) => {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = `${item.name} - $${item.price.toFixed(2)} `;
+                    
+                    var removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove';
+                    removeButton.onclick = function() {
+                        removeItemFromCart(index);
+                    };
+                    listItem.appendChild(removeButton);
+    
+                    cartItemsElement.appendChild(listItem);
+                });
+    
+                totalAmountElement.textContent = totalAmount.toFixed(2);
+            }
+    
+            function toggleCollapsible(itemId) {
+                var content = document.getElementById(itemId);
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            }
+        </script>
+    
+    </body>
+    </html>
+    

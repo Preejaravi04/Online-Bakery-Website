@@ -1,0 +1,63 @@
+
+.button{    
+    text-align: center;
+    padding: 8px 20px;
+    margin: 7px 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list li {
+        list-style: none;
+        padding: 26px 30px;
+    }
+ 
+    .nav-list li a {
+        text-decoration: none;
+        color: black;
+    }
+ 
+    .nav-list li a:hover {
+        color: grey;
+    }
+ 
+    .rightnav {
+        width: 30%;
+        text-align: right;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #slideshow-container {
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        width: 100vw; 
+        height: 100vh; 
+        object-fit: cover; 
+    }

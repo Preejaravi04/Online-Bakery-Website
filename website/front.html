@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="front.css">
+    <title>preke's bakery</title>
+    </head>
+<body style="background-color: beige;">
+    
+        <nav class="navbar">
+            <ul class="nav-list">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="products.html">MENU</a></li>
+            <li><a href="aboutus.html">ABOUT US </a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="help.html">HELP </a></li>
+            </ul>
+        
+     
+            <div class="rightNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm" onclick="handleSearch()">Search</button>
+            </div>
+        </nav>
+        <div id="slideshow-container">
+            <div class="mySlides">
+                <img src="C:\Users\srija\OneDrive\Desktop\cupcake.jpg" alt="Cupcake">
+            </div>
+        
+            <div class="mySlides">
+                <img src="C:\Users\srija\OneDrive\Desktop\sand2.jpg" alt="Sandwich">
+            </div>
+        
+            <div class="mySlides">
+                <img src="C:\Users\srija\OneDrive\Desktop\burger.jpg" alt="Burger">
+            </div>
+        </div>
+        
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); 
+            }
+            function handleSearch() {
+            var searchTerm = document.getElementById('search').value;
+            alert('Searching for: ' + searchTerm);
+        }
+        </script>
+        
+    
+        
+</body>
+    </html>
